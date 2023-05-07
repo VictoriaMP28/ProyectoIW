@@ -4,8 +4,9 @@ class ConexionBD {
     private $conexion;
 
     public function __construct() {
-        $propiedades = parse_ini_file('../../../../config/properties/database.properties');
-
+        //$propiedades = parse_ini_file('../../../config/properties/database.properties');
+        //$propiedades = parse_ini_file('C:\xampp\htdocs\IW\config\properties\database.properties');
+        $propiedades = parse_ini_file(__DIR__ . '/../../../../config/properties/database.properties');
         $dsn = "mysql:host={$propiedades['database.host']};dbname={$propiedades['database.name']}";
         $usuario = $propiedades['database.user'];
         $contrasena = $propiedades['database.password'];

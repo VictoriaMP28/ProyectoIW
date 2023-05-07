@@ -7,12 +7,12 @@
 </head>
 <body>
     <div class="contenedor">
-        <form action="" method="POST">
+        <form action="../controller/LoginController.php" method="POST">
             <h1>Login</h1>
             <label for="usuario">Usuario:</label>
             <input type="text" name="usuario" id="usuario" required>
             <label for="contrasena">Contraseña:</label>
-            <input type="password" name="contrasena" id="contrasena" required>
+            <input type="password" name="password" id="contrasena" required>
             <input type="submit" value="Iniciar sesión">
         </form>
     </div>
